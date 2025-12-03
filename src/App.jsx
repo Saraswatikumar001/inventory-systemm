@@ -8,6 +8,7 @@ import AdvancedUI from "./components/AdvancedUI";
 import FormElements from "./components/FormElements";
 import Tables from "./components/Tables";
 import Charts  from "./components/Charts";
+import Tickets from "./components/Tickets";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
             <Route path="/forms" element={<FormElements />} />
             <Route path="/tables"  element={<Tables />} />
             <Route path="/charts" element={<Charts/>} />
+            <Route path="/tickets" element={<Tickets/>} />
             
           </Routes>
         </main>
