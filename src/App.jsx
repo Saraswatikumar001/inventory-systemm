@@ -9,6 +9,7 @@ import FormElements from "./components/FormElements";
 import Tables from "./components/Tables";
 import Charts  from "./components/Charts";
 import Tickets from "./components/Tickets";
+import ChatSection from "./components/ChatSection";
 
 export default function App() {
   return (
@@ -28,7 +29,7 @@ export default function App() {
             <Route path="/tables"  element={<Tables />} />
             <Route path="/charts" element={<Charts/>} />
             <Route path="/tickets" element={<Tickets/>} />
-            
+            <Route path="chat"  element={<ChatSection/>} />           
           </Routes>
         </main>
       </div>
