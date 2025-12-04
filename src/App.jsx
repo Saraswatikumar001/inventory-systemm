@@ -10,6 +10,10 @@ import Tables from "./components/Tables";
 import Charts  from "./components/Charts";
 import Tickets from "./components/Tickets";
 import ChatSection from "./components/ChatSection";
+import NotificationBell from "./components/NotificationBell";
+import MapsSection from "./components/MapsSection";
+import UserPage from "./components/UserPage";
+import GeneralPage from "./components/GeneralPage";
 
 export default function App() {
   return (
@@ -17,7 +21,6 @@ export default function App() {
       <div className="flex">
         {/* Sidebar stays always visible */}
         <Sidebar />
-
         {/* Main Content Area */}
         <main className="flex-1 bg-gray-50 p-6">
           <Routes>
@@ -29,7 +32,11 @@ export default function App() {
             <Route path="/tables"  element={<Tables />} />
             <Route path="/charts" element={<Charts/>} />
             <Route path="/tickets" element={<Tickets/>} />
-            <Route path="chat"  element={<ChatSection/>} />           
+            <Route path="/chat"  element={<ChatSection/>} /> 
+            <Route path="/notifications" element={<NotificationBell/>} />   
+            <Route path="/maps" element={<MapsSection/>} /> 
+            <Route path="/users" element={<UserPage/>} />
+            <Route path="/pages" element={<GeneralPage/>} /> 
           </Routes>
         </main>
       </div>
