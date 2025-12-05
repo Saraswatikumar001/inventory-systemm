@@ -14,6 +14,9 @@ import NotificationBell from "./components/NotificationBell";
 import MapsSection from "./components/MapsSection";
 import UserPage from "./components/UserPage";
 import GeneralPage from "./components/GeneralPage";
+import EcommerceSection from "./components/EcommerceSection";
+import EmailSection from "./components/EmailSection";
+import ContactSection from "./components/ContactSection";
 
 export default function App() {
   return (
@@ -37,6 +40,9 @@ export default function App() {
             <Route path="/maps" element={<MapsSection/>} /> 
             <Route path="/users" element={<UserPage/>} />
             <Route path="/pages" element={<GeneralPage/>} /> 
+            <Route path="/ecommerce" element={<EcommerceSection/>} />
+            <Route path="/email" element={<EmailSection/>} />
+            <Route path="/contact" element={<ContactSection/>} />
           </Routes>
         </main>
       </div>
