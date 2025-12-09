@@ -24,6 +24,7 @@ import { CartProvider } from "./context/CartContext";
 import Checkout from "./ecommerce/Checkout";
 import TaskList from "./components/TaskList";
 import Gallery from "./components/Gallery";
+import Documentation from "./components/Documentation";
 
 export default function App() {
   return (
@@ -53,6 +54,7 @@ export default function App() {
               <Route path="/contact" element={<ContactSection />} />
               <Route path="/task-list" element={<TaskList />} />
               <Route path="/gallery" element={<Gallery />} />
+              <Route path="/docs" element={<Documentation />} />
 
               {/* -------------------- Ecommerce Routes -------------------- */}
               <Route path="/ecommerce" element={<Ecommerce />} />

@@ -6,24 +6,22 @@ export default function Checkout() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-100 p-4 sm:p-6">
-      
+
       {/* Header */}
       <div className="flex justify-between items-center bg-white shadow-lg p-4 sm:p-5 rounded-xl mb-6 sm:mb-8">
-        <h2 className="text-xl sm:text-3xl font-bold text-indigo-700">Checkout</h2>
-
+        <h2 className="text-xl sm:text-3xl font-bold text-[#005461]">Checkout</h2>
         <button
-          onClick={() => navigate("/ecommerce/cart")}
+           onClick={() => navigate("/ecommerce/products")}
           className="text-indigo-600 font-medium hover:text-indigo-800 hover:underline transition text-sm sm:text-base"
         >
-          ← Back to Cart
+          ← Back to Productlist
         </button>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
-        
         {/* LEFT SECTION */}
         <div className="lg:col-span-2 bg-white p-5 sm:p-8 rounded-xl shadow-md border border-gray-200">
-          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4 sm:mb-6 border-b pb-2">
+          <h3 className="text-lg sm:text-xl font-semibold text-[#CC561E] mb-4 sm:mb-6 border-b pb-2">
             Billing Information
           </h3>
 
@@ -35,7 +33,7 @@ export default function Checkout() {
             <input type="text" placeholder="Alternate Phone" className="inputBox" />
           </div>
 
-          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mt-6 sm:mt-8 mb-2 border-b pb-2">
+          <h3 className="text-lg sm:text-xl font-semibold text-[#CC561E] mt-6 sm:mt-8 mb-2 border-b pb-2">
             Shipping Address
           </h3>
 
@@ -94,10 +92,10 @@ export default function Checkout() {
           </div>
 
           <button
-            onClick={() => alert("Order Placed Successfully 🎉")}
+            onClick={() => alert("Order Placed Successfully")}
             className="mt-6 w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg text-base sm:text-lg font-semibold transition transform hover:scale-[1.03]"
           >
-            Place Order 🚀
+            Place Order 
           </button>
         </div>
       </div>

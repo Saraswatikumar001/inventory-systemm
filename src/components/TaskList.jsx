@@ -26,8 +26,8 @@ export default function TaskList() {
       <div className="w-full max-w-2xl bg-white shadow-xl rounded-2xl p-6">
         
         {/* Header */}
-        <h2 className="text-3xl font-bold text-indigo-700 mb-6 text-center">
-          📌 Task Manager
+        <h2 className="text-3xl font-bold text-black mb-6 text-center">
+         Task Manager
         </h2>
 
         {/* Input Section */}

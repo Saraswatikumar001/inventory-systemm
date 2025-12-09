@@ -5,10 +5,10 @@ import DataTable from "../components/DataTable";
 
 export default function Dashboard() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 sm:space-y-8">
 
       {/* ===== Top Stats ===== */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
         <StatCard
           title="Revenue"
           value="$3,468.96"
@@ -36,37 +36,37 @@ export default function Dashboard() {
       </div>
 
       {/* ===== Charts Section ===== */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
-        {/* Sales Chart - Large */}
-        <div className="lg:col-span-2 bg-white rounded-xl p-6 shadow-md border border-gray-100">
-          <div className="flex justify-between items-center mb-4">
-            <h3 className="font-semibold text-lg">Sales Overview</h3>
+      <div
+        className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6  mt-20 lg:mt-0"
+        style={{ marginTop: "80px" }}
+      >
 
-            <div className="flex gap-2 text-sm text-gray-400">
-              <button className="px-3 py-1 rounded-full hover:bg-gray-100">Daily</button>
-              <button className="px-3 py-1 rounded-full hover:bg-gray-100">Weekly</button>
-              <button className="px-3 py-1 rounded-full hover:bg-purple-100 text-purple-600 font-medium">
+        {/* Sales Chart - Large */}
+        <div className="lg:col-span-2 bg-white rounded-xl p-4 sm:p-6 shadow-md border border-gray-100">
+          <div className="flex justify-between items-center mb-4 flex-wrap gap-2">
+            <h3 className="font-semibold text-base sm:text-lg">Sales Overview</h3>
+            <div className="flex flex-wrap gap-2 text-xs sm:text-sm text-gray-400">
+              <button className="px-3 py-1 rounded-full hover:bg-gray-100 transition">Daily</button>
+              <button className="px-3 py-1 rounded-full hover:bg-gray-100 transition">Weekly</button>
+              <button className="px-3 py-1 rounded-full bg-purple-100 text-purple-600 font-medium transition">
                 Monthly
               </button>
             </div>
           </div>
-
           <MiniChart />
         </div>
 
         {/* Donut Chart */}
-        <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-          <h3 className="font-semibold text-lg mb-4">Traffic</h3>
-
+        <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md border border-gray-100">
+          <h3 className="font-semibold text-base sm:text-lg mb-4">Traffic</h3>
           <div className="flex justify-center items-center">
-            <div className="relative h-48 w-48">
-              {/* Real Donut will replace this placeholder */}
+            <div className="relative h-36 w-36 sm:h-48 sm:w-48 mx-auto">
+              {/* Replace with real donut chart later */}
               <div className="h-full w-full rounded-full bg-gradient-to-br from-pink-300 to-yellow-300 shadow-lg"></div>
             </div>
           </div>
 
-          <div className="grid grid-cols-3 text-center mt-3 text-sm">
+          <div className="grid grid-cols-3 text-center mt-4 text-xs sm:text-sm">
             <div>
               <p className="font-semibold text-gray-700">33%</p>
               <span className="text-gray-400">Direct</span>
@@ -84,17 +84,17 @@ export default function Dashboard() {
       </div>
 
       {/* ===== Table Section ===== */}
-      <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+      <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md border border-gray-100 overflow-x-auto">
         <div className="flex justify-between items-center mb-4">
-          <h3 className="font-semibold text-lg">Order Status</h3>
-
-          <button className="px-4 py-2 bg-purple-600 text-white rounded-lg text-sm hover:bg-purple-700 transition">
+          <h3 className="font-semibold text-base sm:text-lg">Order Status</h3>
+          <button className="px-4 py-2 bg-purple-600 text-white rounded-lg text-xs sm:text-sm hover:bg-purple-700 transition">
             Export ▼
           </button>
         </div>
 
         <DataTable />
       </div>
+
     </div>
   );
 }
