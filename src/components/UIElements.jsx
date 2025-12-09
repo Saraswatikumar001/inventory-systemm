@@ -15,7 +15,7 @@ export default function UIElements() {
           <button className="px-4 py-2 text-sm sm:text-base bg-purple-600 text-white rounded hover:bg-purple-700 transition">
             Primary
           </button>
-          <button className="px-4 py-2 text-sm sm:text-base bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition">
+          <button className="px-4 py-2 text-sm sm:text-base bg-yellow-300 text-gray-800 rounded hover:bg-gray-300 transition">
             Secondary
           </button>
           <button className="px-4 py-2 text-sm sm:text-base bg-green-500 text-white rounded hover:bg-green-600 transition">
