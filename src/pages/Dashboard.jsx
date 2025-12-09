@@ -5,7 +5,7 @@ import DataTable from "../components/DataTable";
 
 export default function Dashboard() {
   return (
-    <div className="space-y-6 sm:space-y-8">
+    <div className="space-y-6 sm:space-y-8  mt-16 lg:mt-0">
 
       {/* ===== Top Stats ===== */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
